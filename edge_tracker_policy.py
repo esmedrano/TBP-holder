@@ -526,11 +526,11 @@ class DistScanFullPolicy(InformedPolicy):
     def check_if_object_boundary_complete(self):
         self.step_count += 1
 
-        reverse_moves = ["up", "right", "down", "left"]
-        last_move_index = reverse_moves.index(self.last_direction)
-        indeces = [(last_move_index + i) % 4 for i in [*range(0, 4)]]
-        if self.last_four_moves == [reverse_moves[i] for i in indeces]:
-            pass
+        # reverse_moves = ["up", "right", "down", "left"]
+        # last_move_index = reverse_moves.index(self.last_direction)
+        # indeces = [(last_move_index + i) % 4 for i in [*range(0, 4)]]
+        # if self.last_four_moves == [reverse_moves[i] for i in indeces]:
+        #     pass
 
         # Check if self._phase is not None or else the interior scan phase will be set to "position_left" for every
         # interior scan step
